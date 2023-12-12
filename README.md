@@ -123,14 +123,18 @@ input(type="imfile" ruleset="forwardSysLogs" Tag="SyncTime" File="/alog/firewall
 **To collect the all of the important Firewalla connection logs, etc., doing the following:**
 
 - Go to the following directory by *running the following command*:
+
 `cd /etc/rsyslog.d`
 
 - Create the the Syslog conf file :
+
 `sudo touch /etc/rsyslog.d/09-externalserver.conf`
+
 `sudo vi /etc/rsyslog.d/09-externalserver.conf`
 
 - Next we need to open the file in order to paste our new configs by running the following command:
-**```sudo vi 09-externalserver.conf```**
+
+`sudo vi 09-externalserver.conf`
 
 - *Press* the letter `i` on your keyboard for insert
 
