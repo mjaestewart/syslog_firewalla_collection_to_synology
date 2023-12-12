@@ -113,27 +113,18 @@ input(type="imfile" ruleset="forwardSysLogs" Tag="SyncTime" File="/alog/firewall
 ```
 
 
-#########################################
+###############################
 **Setting up Syslog on Firewalla to send to Synology**
-#########################################
+###############################
 
 **To collect the all of the important Firewalla connection logs, etc., doing the following:**
 
 - Go to the following directory by *running the following command*:
+`cd /etc/rsyslog.d`
 
-        - **```cd /etc/rsyslog.d```**
-
-
-
-- If the conf file doesn't exist then you'll need to create the the Syslog conf file :
+- Create the the Syslog conf file :
 `sudo touch /etc/rsyslog.d/09-externalserver.conf`
 `sudo vi /etc/rsyslog.d/09-externalserver.conf`
-
-- If the **09-externalserver.conf** file exists because you already *ran the script on this Github* then you'll need to delete the script that created it (**this step is extremely important or your new config will be overwritten by the script**). 
-`sudo rm -rf /home/pi/.firewalla/config/post_main.d/addremotesyslog.sh`
-
-- Since deleting the script, we can keep the file name in place if it already exists but we want to `erase everything from that file` by *running the following command* **(if you created the conf file using the `touch` command then skip this step since it will already be empty)**:
-**```sudo sed -i d 09-externalserver.conf```**
 
 - Next we need to open the file in order to paste our new configs by running the following command:
 **```sudo vi 09-externalserver.conf```**
