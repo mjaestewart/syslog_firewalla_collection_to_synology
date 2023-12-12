@@ -1,6 +1,7 @@
 ################
 **Prerequisite**
 ################
+
 Did you setup the syslog inputs on the synology in log center? 
 
 **If not** go to `Log Center` > `Log Receiving` > `Create` > Give your  connection a `name`, then specify whether you want to use `TCP or UDP` on `port 514`. `BSD` format is fine as well. 
