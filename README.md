@@ -1,6 +1,6 @@
-################
+**################**
 **Prerequisite**
-################
+**################**
 
 Did you setup the syslog inputs on the synology in log center? 
 
@@ -95,9 +95,9 @@ input(type="imfile" ruleset="forwardSysLogs" Tag="SyncTime" File="/alog/firewall
 ```
 
 
-#########################
+**#########################**
 **Modifying the config**
-########################
+**########################**
 
 **Be sure to change the following attributes in the new config file before pasting via `VI` into the syslog conf file:**
 ```
@@ -114,9 +114,9 @@ input(type="imfile" ruleset="forwardSysLogs" Tag="SyncTime" File="/alog/firewall
 ```
 
 
-###############################
+**###############################**
 **Setting up Syslog on Firewalla to send to Synology**
-###############################
+**###############################**
 
 **To collect the all of the important Firewalla connection logs, etc., doing the following:**
 
